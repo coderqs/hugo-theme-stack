@@ -13,6 +13,8 @@ params:
     footer:
         since:
         customText:
+        ccLicenseIcon: true
+            
 
     dateFormat:
         published: Jan 02, 2006

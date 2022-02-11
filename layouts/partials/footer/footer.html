@@ -10,7 +10,7 @@
     
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
-            {{ . | safeHTML }} <br/>
+        {{ . | safeHTML }} <br />
         {{ end }}
 
         {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
@@ -19,5 +19,15 @@
 
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
-    </section>
+        {{ if .Site.Params.footer.ccLicenseIcon }}
+            <div class="cc-license-icons">
+                <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" title="Licensed Under CC BY-NC-SA 4.0">
+                    <i class="cc-icon-cc"> {{ partial "helper/icon" "cc-icons/cc" }} </i>
+                    <i class="cc-icon-by"> {{ partial "helper/icon" "cc-icons/by" }} </i>
+                    <i class="cc-icon-nc"> {{ partial "helper/icon" "cc-icons/nc" }} </i>
+                    <i class="cc-icon-sa"> {{ partial "helper/icon" "cc-icons/sa" }} </i>
+                </a>
+            </div>
+        {{ end }}
+</section>
 </footer>
