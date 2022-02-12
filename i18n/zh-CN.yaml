@@ -50,3 +50,16 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+
+footer:
+    runDays:
+        other: "已运行"
+    runDays1:
+        other: "天"
+
+    totalArticleWord:
+        other: "字"
+
+    totalArticle:
+        other: "篇文章"

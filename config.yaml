@@ -14,7 +14,13 @@ params:
         since:
         customText:
         ccLicenseIcon: true
-            
+        RunDays:
+            enabled: true
+            launchDate: "2022-01-01"
+        articleTotalStatistics: 
+            enabled: true
+            totalArticleWordEmoji: ⌨
+            totalArticleEmoji: 🧠
 
     dateFormat:
         published: Jan 02, 2006
