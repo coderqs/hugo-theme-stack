@@ -52,7 +52,6 @@
 .site-info {
     z-index: 1;
     transition: box-shadow 0.5s ease;
-
     padding: 15px;
 
     @include respond(md) {
@@ -62,9 +61,10 @@
     .site-avatar {
         position: relative;
         margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         width: var(--sidebar-avatar-size);
         height: var(--sidebar-avatar-size);
-
         margin-bottom: var(--sidebar-element-separation);
 
         .site-logo {
@@ -98,6 +98,7 @@
     .site-name {
         color: var(--accent-color);
         margin: 0;
+        text-align: center;
         font-size: 1.8rem;
 
         @include respond(2xl) {
@@ -109,6 +110,7 @@
         color: var(--body-text-color);
         font-weight: normal;
         margin: 10px 0;
+        text-align: center;
         font-size: 1.6rem;
 
         @include respond(2xl) {
