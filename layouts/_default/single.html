@@ -47,10 +47,10 @@
     {{ if (.Scratch.Get "hasTOC") }}
         <aside class="sidebar right-sidebar sticky">
             <section class="widget archives">
-                <div class="widget-icon">
-                    {{ partial "helper/icon" "hash" }}
+                <div class="widget-icon-title">
+                    {{ partial "helper/icon" "hash" }} &nbsp;&nbsp;
+                    <h2 class="widget-title section-title">{{ T "article.tableOfContents" }}</h2>
                 </div>
-                <h2 class="widget-title section-title">{{ T "article.tableOfContents" }}</h2>
                 
                 <div class="widget--toc">
                     {{ .TableOfContents }}
