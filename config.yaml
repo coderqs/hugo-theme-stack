@@ -37,6 +37,7 @@ params:
     article:
         math: false
         toc: true
+        styleUniform: true
         readingTime: true
         showHeaderImage: true
         license:
