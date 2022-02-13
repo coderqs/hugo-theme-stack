@@ -1,4 +1,11 @@
 <footer class="article-footer">
+    {{ if .Site.Params.article.PermaLinks }}
+        <p class="article-copyright">
+            <span class="item-title">{{ T "article.permalink" }}: &nbsp;</span>
+            <span class="item-content">{{ .Permalink }}</span>
+        </p>
+    {{ end }}
+
     {{ partial "article/components/tags" . }}
 
     {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
