@@ -24,3 +24,14 @@
     color: #fff;
     background: #9e9e9e;
 }
+
+.right-sidebar {
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
