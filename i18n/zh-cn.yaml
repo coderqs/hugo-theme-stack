@@ -23,6 +23,9 @@ article:
     wordCount:
         other: "{{ .Count }} 字"
 
+    permalink:
+        other: 本文链接
+
 notFound:
     title:
         other: 404 错误
