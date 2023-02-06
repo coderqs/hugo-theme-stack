@@ -5,8 +5,8 @@
     {{- $archivesPage := index $query 0 -}}
     <section class="widget archives">
         <div class="widget-icon">
-            {{ partial "helper/icon" "package" }}&nbsp;&nbsp;
-            <h2 class="widget-title section-title">{{ T "widget.archives.title" }}</h2>
+            {{ partial "helper/icon" "package" }} &nbsp;&nbsp;
+            <h2 class="widget-title has-icon-section-title">{{ T "widget.archives.title" }}</h2>
         </div>
 
         {{ $pages := where $context.Site.RegularPages "Type" "in" $context.Site.Params.mainSections }}
